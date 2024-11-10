@@ -1,102 +1,39 @@
 "use client";
 
 import React, { useState } from "react";
-import {
-  Navbar,
-  NavbarBrand,
-  NavbarContent,
-  NavbarItem,
-  NavbarMenuToggle,
-  NavbarMenu,
-  NavbarMenuItem,
-  Link,
-  Button,
-} from "@nextui-org/react";
-import { AcmeLogo } from "./AcmeLogo"; // Ensure AcmeLogo is compatible with TypeScript
+import { HoveredLink, Menu, MenuItem, ProductItem } from "@/components/ui/navbar-menu";
+import { cn } from "@/lib/utils";
+import Link from "next/link";
 
-const App: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
-
-  const menuItems: string[] = [
-    "Profile",
-    "Dashboard",
-    "Activity",
-    "Analytics",
-    "System",
-    "Deployments",
-    "My Settings",
-    "Team Settings",
-    "Help & Feedback",
-    "Log Out",
-  ];
-
+const Navbar = ({ className }: { className?: string }) => {
+  const [active, setActive] = useState<string | null >(null)
   return (
-    <Navbar
-      onMenuOpenChange={(open: boolean) => setIsMenuOpen(open)}
-      className="m-4"
+    <div 
+    className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}
     >
-      <NavbarContent>
-        <NavbarMenuToggle
-          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden"
-        />
-        <NavbarBrand>
-          <AcmeLogo />
-          <p className="font-bold text-inherit">ACME</p>
-        </NavbarBrand>
-      </NavbarContent>
-
-      <NavbarContent className="hidden sm:flex gap-10 " justify="center">
-        <NavbarItem>
-          <Link className="text-foreground" href="#">
-            Fetures
+      <Menu setActive={setActive}> 
+        <Link href={'/'}> 
+          <MenuItem  setActive={setActive} active={active} item="Home">
+           
+          </MenuItem>
+        </Link>
+          <MenuItem
+            setActive={setActive} active={active} item="Travel with us"
+          >
+            <div className="flex flex-col space-y-4 text-sm" >
+              <HoveredLink href="/courses">All Courses</HoveredLink>
+              <HoveredLink href="/courses">Basic Music Theory</HoveredLink>
+              <HoveredLink href="/courses">Advanced Composition</HoveredLink>
+              <HoveredLink href="/courses">SongWriting</HoveredLink>
+              <HoveredLink href="/courses">Music Production</HoveredLink>
+            </div>
+          </MenuItem>
+          <Link href={'/contact'}>
+            <MenuItem setActive={setActive} active={active} item="Contact Us"></MenuItem>
           </Link>
-        </NavbarItem>
-        <NavbarItem isActive>
-          <Link href="#" aria-current="page">
-            Customers
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link className="text-foreground" href="#">
-            Integrations
-          </Link>
-        </NavbarItem>
-      </NavbarContent>
+      </Menu> 
+    </div>
+  )
+}
 
-      <NavbarContent justify="end">
-        {/* <NavbarItem className="hidden lg:flex">
-          <Link href="#">Login</Link>
-        </NavbarItem> */}
-        <NavbarItem>
-          {/* <Button as={Link} color="primary" href="#" variant="flat">
-            Sign Up
-          </Button> */}
-        </NavbarItem>
-      </NavbarContent>
-
-      <NavbarMenu>
-        {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
-            <Link
-              style={{
-                color:
-                  index === 2
-                    ? "var(--primary-color)"
-                    : index === menuItems.length - 1
-                    ? "var(--danger-color)"
-                    : "var(--foreground-color)",
-              }}
-              className="w-full"
-              href="#"
-            >
-              {item}
-            </Link>
-          </NavbarMenuItem>
-        ))}
-      </NavbarMenu>
-    </Navbar>
-  );
-};
-
-export default App;
+export default Navbar

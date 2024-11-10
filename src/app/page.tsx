@@ -1,7 +1,11 @@
+import Cards from "@/components/Cards";
+import Hero from "@/components/Hero";
+
 export default function Home() {
   return (
-    <div>
-      <h1 className="text-2xl text-center bg-purple-500">Next j</h1>
-    </div>
+    <>
+     <Hero/>
+     <Cards/>
+    </>
   );
 }
