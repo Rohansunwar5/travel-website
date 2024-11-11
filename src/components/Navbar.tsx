@@ -4,8 +4,9 @@ import React, { useState } from "react";
 import { HoveredLink, Menu, MenuItem} from "@/components/ui/navbar-menu";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import dynamic from "next/dynamic";
 
-const Navbar = ({ className }: { className?: string }) => {
+const  Navbar = ({ className }: { className?: string }) => {
   const [active, setActive] = useState<string | null >(null)
   return (
     <div 
@@ -36,4 +37,4 @@ const Navbar = ({ className }: { className?: string }) => {
   )
 }
 
-export default Navbar
+export default dynamic (() => Promise.resolve(Navbar), {ssr:false})
