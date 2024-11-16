@@ -16,7 +16,7 @@ const Hero = () => {
         </div>
 
         <div className='absolute h-full top-[20%]  bottom-[50%] sm:px-8 sm:justify-center sm:text-center sm:w-full md:w-full' style={{ padding: '0 1.3rem'}}>  {/*sectionText*/}
-            <h1 className='font-black text-7xl text-[#4B4376] sm:font-bold sm:text-10xl  md:font-extrabold md:max-w-[70%] md:mx-auto'> Unlock Your Travel Dreams with Us !</h1>
+            <h1 className='font-black  text-[#4B4376] sm:font-bold sm:text-10xl  md:font-extrabold md:max-w-[100%] md:mx-auto' style={{ fontSize: "3.5rem" }}> Unlock Your Travel Dreams with Us !</h1>
             <p className='font-medium  sm:py-4 sm:max-w-[100%] sm:mx-auto md:py-4 md:max-w-[70%] md:mx-auto' style={{padding :"1rem 0" }}>
                 Discover the worlds most beautiful places with us
             </p>
@@ -27,7 +27,7 @@ const Hero = () => {
         <div className="hidden  md:flex absolute w-full items-center justify-center" style={{ bottom: "10%"  }}>
         {/* Popular Places */}
         <div className="content " style={{marginTop: "0px" }}>
-        <h3 className="text-white py-4 relative after:content-[''] after:w-[83%] after:h-[2px] after:bg-gray-300 after:right-0 after:bottom-1/2 after:absolute">
+        <h3 className="text-white py-2 relative after:content-[''] after:w-[83%] after:h-[2px] after:bg-gray-300 after:right-0 after:bottom-1/2 after:absolute">
             Popular Places
         </h3>
         <div className="items-center justify-center gap-8 flex"> {/* Images */}
