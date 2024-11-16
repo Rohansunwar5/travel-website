@@ -9,8 +9,8 @@ export default function Cards() {
   ));
 
   return (
-    <div className="w-full h-screen relative py-10">
-  <h2 className="absolute top-12 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-xl md:text-5xl font-bold text-[#E8BCB9] dark:text-neutral-200 font-sans">
+    <div className="w-full h-full relative py-20">
+  <h2 className="absolute  left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-xl md:text-5xl font-bold text-[#E8BCB9] dark:text-neutral-200 font-sans">
     Top destinations to visit
   </h2>
   <Carousel items={cards} />
