@@ -35,12 +35,9 @@ const Hero = () => {
             <button className="p-[3px] relative">
             <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
             <div className="px-8 py-2  bg-[#4B4376] rounded-[6px]  relative group transition duration-200 text-[#E8BCB9] hover:bg-transparent">
-                Lit up borders
+                Get started
             </div>
             </button>
-            {/* <button className="gap-2 px-8 border flex sm:auto md:mx-auto">
-                Get started
-            </button> */}
         </motion.div>
         <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -58,7 +55,7 @@ const Hero = () => {
         style={{ marginTop: '0px' }}
       >
         <motion.h3
-          className="text-[#4B4376] py-2 relative after:content-[''] after:w-[83%] after:h-[2px] after:bg-[#4B4376] after:right-0 after:bottom-1/2 after:absolute"
+          className="text-[#4B4376] py-2 relative after:content-[&apos;&apos;] after:w-[83%] after:h-[2px] after:bg-[#4B4376] after:right-0 after:bottom-1/2 after:absolute"
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, ease: 'easeInOut', delay: 1 }}
