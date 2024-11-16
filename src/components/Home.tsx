@@ -30,7 +30,7 @@ const Hero = () => {
                 className="text-[#4B4376] font-medium sm:py-4 sm:max-w-[100%] sm:mx-auto md:py-4 md:max-w-[70%] md:mx-auto"
                 style={{ padding: '1rem 0' }}
             >
-                Discover the world's most beautiful places with us
+                Discover the world&apos;s most beautiful places with us
             </p>
             <button className="p-[3px] relative">
             <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
