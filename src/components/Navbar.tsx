@@ -1,40 +1,93 @@
-"use client";
+"use client"
 
-import React, { useState } from "react";
-import { HoveredLink, Menu, MenuItem} from "@/components/ui/navbar-menu";
-import { cn } from "@/lib/utils";
-import Link from "next/link";
-import dynamic from "next/dynamic";
+import gsap from "gsap";
+import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
+import Logo from '../../public/person-1.png'
+import { TiLocationArrow } from "react-icons/ti";
+// import clsx from "clsx";
 
-const  Navbar = ({ className }: { className?: string }) => {
-  const [active, setActive] = useState<string | null >(null)
+const navItems = [
+  { label: "Home", href: "home" },
+  { label: "About", href: "about" },
+  { label: "Prologue", href: "prologue" },
+  { label: "Features", href: "features" },
+];
+
+const NavBar = () => {
+  const navContainerRef = useRef<HTMLDivElement | null>(null);
+  const [isNavVisible, setIsNavVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+
+      if (scrollY === 0) {
+        setIsNavVisible(true);
+        navContainerRef.current?.classList.remove("floating-nav");
+      } else if (scrollY > lastScrollY) {
+        setIsNavVisible(false);
+        navContainerRef.current?.classList.add("floating-nav");
+      } else if (scrollY < lastScrollY) {
+        setIsNavVisible(true);
+        navContainerRef.current?.classList.add("floating-nav");
+      }
+
+      setLastScrollY(scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
+
+  useEffect(() => {
+    if (navContainerRef.current) {
+      gsap.to(navContainerRef.current, {
+        y: isNavVisible ? 0 : -100,
+        opacity: isNavVisible ? 1 : 0,
+        duration: 0.2,
+      });
+    }
+  }, [isNavVisible]);
+
   return (
-    <div 
-    className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}
+    <div
+      ref={navContainerRef}
+      className="fixed inset-x-0 top-4 z-50 h-16 border-none transition-all duration-700 sm:inset-x-6"
     >
-      <Menu setActive={setActive}> 
-        <Link href={'/'}> 
-          <MenuItem  setActive={setActive} active={active} item="Home">
-           
-          </MenuItem>
-        </Link>
-          <MenuItem
-            setActive={setActive} active={active} item="Travel with us"
-          >
-            <div className="flex flex-col space-y-4 text-sm" >
-              <HoveredLink href="/courses">All Courses</HoveredLink>
-              <HoveredLink href="/courses">Basic Music Theory</HoveredLink>
-              <HoveredLink href="/courses">Advanced Composition</HoveredLink>
-              <HoveredLink href="/courses">SongWriting</HoveredLink>
-              <HoveredLink href="/courses">Music Production</HoveredLink>
+      <header className="absolute top-1/2 w-full -translate-y-1/2">
+        <nav className="flex size-full items-center justify-between p-4">
+          {/* left side of the navbar */}
+          <div className="flex items-center gap-7">
+            <Image
+              src={Logo}
+              alt="logo"
+              width={40}
+              height={40}
+              className="w-10"
+            />
+          <button className="flex items-center gap-2 px-4 py-2 rounded-xl border border-black bg-white text-black text-sm hover:shadow-[4px_4px_0px_0px_rgba(0,0,0)] transition duration-200">
+            Contact Us <TiLocationArrow />
+          </button>
+          </div>
+          <div className="flex h-full items-center">
+            <div className="hidden md:block">
+              {navItems.map((item, index) => (
+               <a
+               key={index}
+               href={`#${item.href}`}
+               className="nav-hover-btn"
+             >
+               {item.label}
+             </a>
+              ))}
             </div>
-          </MenuItem>
-          <Link href={'/contact'}>
-            <MenuItem setActive={setActive} active={active} item="Contact Us"></MenuItem>
-          </Link>
-      </Menu> 
+          </div>
+        </nav>
+      </header>
     </div>
-  )
-}
+  );
+};
 
-export default dynamic (() => Promise.resolve(Navbar), {ssr:false})
+export default NavBar;

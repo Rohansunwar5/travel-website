@@ -14,16 +14,18 @@ const Hero = () => {
         <div className='absolute h-full w-full'>  
             <video src='/video.mp4' autoPlay loop muted typeof='videp/mp4' className='h-full w-full object-cover'></video>
         </div>
-
+        {/* <AnimatedTitle
+          title="Unlock<b>Y</b>our travel Dreams with us <br /> <b>D</b>iscover the worlds <b>M</b>ost beautiful places with us"
+          containerClass="mt-5 !text-black text-center"
+        /> */}
         <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1.5, ease: 'easeInOut' }}
-        className="absolute h-full top-[20%] bottom-[50%] sm:px-8 sm:justify-center sm:text-center sm:w-full md:w-full"
-        style={{ padding: '0 1.3rem' }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.5, ease: 'easeInOut' }}
+          className="absolute h-full top-[20%] bottom-[50%] sm:px-8 sm:justify-center sm:text-center sm:w-full md:w-full"
+          style={{ padding: '0 1.3rem' }}
         >
-            {/* Section Text */}
-            <h1 className="font-black text-7xl text-[#4B4376] sm:font-bold sm:text-10xl md:font-extrabold md:max-w-[100%] md:mx-auto">
+            <h1 className="font-ubuntu font-black text-7xl text-[#4B4376] sm:font-bold sm:text-10xl md:font-extrabold md:max-w-[100%] md:mx-auto">
                 Unlock Your Travel Dreams with Us!
             </h1>
             <p
@@ -32,20 +34,20 @@ const Hero = () => {
             >
                 Discover the world&apos;s most beautiful places with us
             </p>
-            <button className="p-[3px] relative">
+            {/* <button className="p-[3px] relative">
             <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
             <div className="px-8 py-2  bg-[#4B4376] rounded-[6px]  relative group transition duration-200 text-[#E8BCB9] hover:bg-transparent">
                 Get started
             </div>
-            </button>
+            </button> */}
         </motion.div>
         <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1.5, ease: 'easeInOut' }}
-      className="hidden md:flex absolute w-full items-center justify-center"
-      style={{ bottom: '5%' }}
-    >
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.5, ease: 'easeInOut' }}
+          className="hidden md:flex absolute w-full items-center justify-center"
+          style={{ bottom: '5%' }}
+        >
       {/* Popular Places */}
       <motion.div
         className="content"

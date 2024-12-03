@@ -3,14 +3,30 @@
 import Cards from "@/components/Cards";
 import Features from "@/components/Features";
 import Hero from '@/components/Home';
+import { About } from "@/components/ui/featuresDemo";
+import NavBar from "@/components/Navbar";
+import Story from "@/components/Story";
 
 
 export default function Home() {
   return (
-    <div className="bg-[#4B4376]">
-      <Hero/>
-     <Cards/>
-     <Features/>
+    <div className="bg-[#4B4376] ">
+      <NavBar/>
+      <section id="home">
+        <Hero />
+      </section>
+      <section>
+        <Story/>
+      </section>
+      <section id="about">
+        <About />
+      </section>
+      <section id="prologue">
+        <Cards />
+      </section>
+      <section id="features">
+        <Features />
+      </section>
     </div>
   );
 }

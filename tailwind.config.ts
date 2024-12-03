@@ -32,6 +32,9 @@ const config: Config = {
           50: '#FEC601',
         },
       },
+      fontFamily: {
+        ubuntu: ['Ubuntu', 'sans-serif'], 
+      },
       animation: {
         shimmer: "shimmer 2s linear infinite",
       },

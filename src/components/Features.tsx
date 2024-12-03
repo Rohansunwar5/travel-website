@@ -18,7 +18,7 @@ const Features = () => {
 
         <div className="z-20 flex w-full flex-col lg:w-[60%]">
           
-            <h2 className="bold-40  lg:bold-64 text-[#E8BCB9] ">Our Features</h2>
+            <h2 className="font-ubuntu text-5xl bold-40  lg:bold-64 text-[#E8BCB9] ">Our Features</h2>
           <ul className="mt-10 grid gap-10 md:grid-cols-2 lg:mg-20 lg:gap-20">
             {FEATURES.map((feature) => (
               <FeatureItem 
