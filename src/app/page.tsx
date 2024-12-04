@@ -6,6 +6,7 @@ import Hero from '@/components/Home';
 import { About } from "@/components/ui/featuresDemo";
 import NavBar from "@/components/Navbar";
 import Story from "@/components/Story";
+import Middle from "@/components/Middle";
 
 
 export default function Home() {
@@ -18,11 +19,14 @@ export default function Home() {
       <section>
         <Story/>
       </section>
-      <section id="about">
-        <About />
+      <section>
+        <Middle/>
       </section>
       <section id="prologue">
         <Cards />
+      </section>
+      <section id="about">
+        <About />
       </section>
       <section id="features">
         <Features />

@@ -34,6 +34,11 @@ const config: Config = {
       },
       fontFamily: {
         ubuntu: ['Ubuntu', 'sans-serif'], 
+        zentry: ["zentry", "sans-serif"],
+        general: ["general", "sans-serif"],
+        "circular-web": ["circular-web", "sans-serif"],
+        "robert-medium": ["robert-medium", "sans-serif"],
+        "robert-regular": ["robert-regular", "sans-serif"],
       },
       animation: {
         shimmer: "shimmer 2s linear infinite",

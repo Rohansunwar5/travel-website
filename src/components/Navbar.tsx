@@ -3,7 +3,7 @@
 import gsap from "gsap";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import Logo from '../../public/person-1.png'
+import Logo from '../../public/Logo.png'
 import { TiLocationArrow } from "react-icons/ti";
 // import clsx from "clsx";
 
@@ -63,9 +63,9 @@ const NavBar = () => {
             <Image
               src={Logo}
               alt="logo"
-              width={40}
-              height={40}
-              className="w-10"
+              width={80}
+              height={80}
+              className="w-20"
             />
           <button className="flex items-center gap-2 px-4 py-2 rounded-xl border border-black bg-white text-black text-sm hover:shadow-[4px_4px_0px_0px_rgba(0,0,0)] transition duration-200">
             Contact Us <TiLocationArrow />

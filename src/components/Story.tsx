@@ -39,7 +39,7 @@ const Story: React.FC = () => {
     <div className="min-h-screen w-full">
       <div className="relative mb-8 mt-36 flex flex-col items-center gap-5">
         <p className="font-ubuntu text-sm uppercase md:text-[10px]">
-          Welcome to Zentry
+          Welcome to Nomads Lane
         </p>
 
         <AnimatedTitle
@@ -54,7 +54,7 @@ const Story: React.FC = () => {
 
 
         <div className="about-subtext">
-          <p className="text-[#E8BCB9]"> <b> Journey of a Lifetime your adventures, now an extraordinary reality </b> </p>
+          <p className="text-[#E8BCB9] text-2xl"> <b> Journey of a Lifetime your adventures, now an extraordinary reality </b> </p>
           <p className="text-white">
           Wanderlust unites travelers from around the world, 
           exploring breathtaking destinations and crafting unforgettable memories,
