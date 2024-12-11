@@ -4,7 +4,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { IconBrandYoutubeFilled } from "@tabler/icons-react";
 import Link from "next/link";
-import Image1 from '../../../public/img-2.png'
 import Image2 from '../../../public/Story.jpg'
 import AnimatedTitle from "../AnimatedTitle";
 
