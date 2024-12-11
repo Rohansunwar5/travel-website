@@ -7,6 +7,10 @@ import { About } from "@/components/ui/featuresDemo";
 import NavBar from "@/components/Navbar";
 import Story from "@/components/Story";
 import Middle from "@/components/Middle";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+import { Testimonials } from "@/components/Testimonials";
+
 
 
 export default function Home() {
@@ -16,13 +20,13 @@ export default function Home() {
       <section id="home">
         <Hero />
       </section>
-      <section>
+      <section id="">
         <Story/>
       </section>
-      <section>
+      <section id="middle">
         <Middle/>
       </section>
-      <section id="prologue">
+      <section id="cards">
         <Cards />
       </section>
       <section id="about">
@@ -30,6 +34,15 @@ export default function Home() {
       </section>
       <section id="features">
         <Features />
+      </section>
+      <section id="testimonials">
+        <Testimonials/>
+      </section>
+      <section id="contact">
+        <Contact/>
+      </section>
+      <section id="footer">
+        <Footer/>
       </section>
     </div>
   );

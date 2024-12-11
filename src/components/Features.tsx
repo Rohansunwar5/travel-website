@@ -1,6 +1,7 @@
 import { FEATURES } from '@/constants'
 import Image from 'next/image'
 import React from 'react'
+import AnimatedTitle from './AnimatedTitle'
 
 const Features = () => {
   return (
@@ -18,7 +19,10 @@ const Features = () => {
 
         <div className="z-20 flex w-full flex-col lg:w-[60%]">
           
-            <h2 className="font-ubuntu text-5xl bold-40  lg:bold-64 text-[#E8BCB9] ">Our Features</h2>
+        <AnimatedTitle
+          title="Our features"
+          containerClass="mt-5 !text-black text-center"
+    />
           <ul className="mt-10 grid gap-10 md:grid-cols-2 lg:mg-20 lg:gap-20">
             {FEATURES.map((feature) => (
               <FeatureItem 
@@ -47,10 +51,10 @@ const FeatureItem = ({ title, icon, description }: FeatureItem) => {
       <div className="rounded-full p-4 lg:p-7 bg-[#AE445A]">
         <Image src={icon} alt="map" width={28} height={28} />
       </div>
-      <h2 className="bold-20 text-[#E8BCB9] lg:bold-32 mt-5 capitalize">
+      <h2 className="bold-20 font-raleway text-[#E8BCB9] lg:bold-32 mt-5 capitalize">
         {title}
       </h2>
-      <p className="regular-16 text-[#E8BCB9] mt-5 lg:mt-[30px] lg:bg-none">
+      <p className="regular-16 font-raleway text-[#E8BCB9] mt-5 lg:mt-[30px] lg:bg-none">
         {description}
       </p>
     </li>

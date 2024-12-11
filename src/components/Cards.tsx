@@ -12,12 +12,9 @@ export default function Cards() {
   return (
     <div className="w-full h-full relative py-20">
        <AnimatedTitle
-          title="Top <b>D</b>estinations  <br /> to <b>V</b>isit "
+          title="Top <b>P</b>laces  <br /> to <b>V</b>isit "
           containerClass="mt-5 !text-black text-center"
         />
-  {/* <h2 className="font-ubuntu absolute lg:text-xl left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-xl md:text-5xl font-bold text-[#E8BCB9] dark:text-neutral-200 ">
-    Top destinations to visit
-  </h2> */}
   <Carousel items={cards} />
 </div>
 

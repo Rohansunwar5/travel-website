@@ -6,6 +6,7 @@ import { IconBrandYoutubeFilled } from "@tabler/icons-react";
 import Link from "next/link";
 import Image1 from '../../../public/img-2.png'
 import Image2 from '../../../public/Story.jpg'
+import AnimatedTitle from "../AnimatedTitle";
 
 export function About() {
   const features = [
@@ -15,7 +16,7 @@ export function About() {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       skeleton: <SkeletonOne />,
       className:
-        "col-span-1 lg:col-span-4 border-b lg:border-r border-black",
+        "col-span-1 font-raleway lg:col-span-4 border-b lg:border-r border-black",
     },
     {
       title: "Lorem Ipsum2",
@@ -43,11 +44,16 @@ export function About() {
   return (
     <div className="relative z-20 py-10 lg:py-40 max-w-7xl mx-auto">
       <div className="px-8">
-        <h4 className="font-ubuntu font-black text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight  text-[#E8BCB9] dark:text-white">
+        {/* <h4 className="font-ubuntu font-black text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight  text-[#E8BCB9] dark:text-white">
           A Glimpse of Us
-        </h4>
+        </h4> */}
 
-        <p className="text-sm lg:text-base  max-w-2xl  my-4 mx-auto text-[#E8BCB9] text-center font-normal dark:text-neutral-300">
+        <AnimatedTitle
+          title="A <b>Glimpse</b><br /> Of  <b>U</b>s "
+          containerClass="mt-5 !text-black text-center"
+        />
+
+        <p className="text-sm lg:text-base font-raleway max-w-2xl  my-4 mx-auto text-[#E8BCB9] text-center font-normal dark:text-neutral-300">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit
         </p>
       </div>
@@ -109,17 +115,17 @@ export const SkeletonOne = () => {
         <div className="w-full p-5 mx-auto bg-white dark:bg-neutral-900 shadow-2xl group h-full">
           <div className="flex flex-1 w-full h-full flex-col space-y-2">
             <Image
-              src={Image1}
+              src='https://images.unsplash.com/photo-1501555088652-021faa106b9b?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
               alt="header"
-              width={500}
-              height={300} // Adjusted height
+              width={1000}
+              height={500} // Adjusted height
               className="h-[300px] w-full object-cover rounded-sm"
             />
           </div>
         </div>
   
         {/* Gradients */}
-        <div className="absolute bottom-0 z-40 inset-x-0 h-40 bg-gradient-to-t from-[#4B4376] dark:from-black via-[#4B4376] dark:via-black to-transparent w-full pointer-events-none" />
+        <div className="absolute bottom-5 z-40 inset-x-0 h-60 bg-gradient-to-t from-[#4B4376] dark:from-black via-[#4B4376] dark:via-black to-transparent w-full pointer-events-none" />
         <div className="absolute top-0 z-40 inset-x-0 h-40 bg-gradient-to-b from-[#4B4376] dark:from-black via-transparent to-transparent w-full pointer-events-none" />
       </div>
     );
@@ -129,7 +135,7 @@ export const SkeletonOne = () => {
 export const SkeletonThree = () => {
   return (
     <Link
-      href="https://www.youtube.com/watch?v=RPa3_AD1_Vs"
+      href="https://youtu.be/9wVoJu9PrpQ?si=PvuC11wBjoyjFHJH"
       target="__blank"
       className="relative flex gap-10  h-60 group/image"
     >
@@ -138,7 +144,7 @@ export const SkeletonThree = () => {
           {/* TODO */}
           <IconBrandYoutubeFilled className="h-20 w-20 absolute z-10 inset-0 text-red-500 m-auto " />
           <Image
-            src="https://assets.aceternity.com/fireship.jpg"
+            src="https://images.unsplash.com/photo-1602020234671-15fd6180428d?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="header"
             width={800}
             height={800}

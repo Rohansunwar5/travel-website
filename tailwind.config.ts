@@ -39,6 +39,10 @@ const config: Config = {
         "circular-web": ["circular-web", "sans-serif"],
         "robert-medium": ["robert-medium", "sans-serif"],
         "robert-regular": ["robert-regular", "sans-serif"],
+        monument: ["Monument Extended"],
+        neutralFace: ["Neutral Face"],
+        segoe: ["Segoe UI"],
+        raleway: ["Raleway", "sans-serif"],
       },
       animation: {
         shimmer: "shimmer 2s linear infinite",

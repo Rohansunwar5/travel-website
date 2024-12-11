@@ -1,23 +1,20 @@
-import gsap from "gsap";
-import { useRef } from "react";
+import React, { useRef, MouseEvent } from "react";
 import Image from "next/image";
-
-import Image1 from '../../public/Logo2.png'
+import gsap from "gsap";
 import AnimatedTitle from "./AnimatedTitle";
+import { TiLocationArrow } from "react-icons/ti";
 
-const Middle = () => {
-  const frameRef = useRef<HTMLImageElement | null>(null);
+const Middle: React.FC = () => {
+  const frameRef = useRef<HTMLImageElement>(null);
 
-  const handleMouseMove = (e: React.MouseEvent<HTMLImageElement>) => {
+  const handleMouseMove = (e: MouseEvent<HTMLImageElement>) => {
     const { clientX, clientY } = e;
     const element = frameRef.current;
-
     if (!element) return;
 
     const rect = element.getBoundingClientRect();
     const xPos = clientX - rect.left;
     const yPos = clientY - rect.top;
-
     const centerX = rect.width / 2;
     const centerY = rect.height / 2;
 
@@ -35,7 +32,6 @@ const Middle = () => {
 
   const handleMouseLeave = () => {
     const element = frameRef.current;
-
     if (element) {
       gsap.to(element, {
         duration: 0.3,
@@ -50,37 +46,33 @@ const Middle = () => {
     <div id="story" className="min-h-dvh w-full bg-black text-blue-50">
       <div className="flex size-full flex-col items-center py-10 pb-24">
         <p className="font-general text-sm uppercase md:text-[10px]">
-          Your One Stop destination
+          the multiversal ip world
         </p>
-
         <div className="relative size-full">
           <AnimatedTitle
-            title="the st<b>o</b>ry of <br /> your adventures with<b>U</b>s"
+            title="Journey to a <br />hidden paradise"
             containerClass="mt-5 pointer-events-none mix-blend-difference relative z-10"
           />
-
           <div className="story-img-container">
             <div className="story-img-mask">
               <div className="story-img-content">
-              <div
-                ref={frameRef}
-                onMouseMove={handleMouseMove}
-                onMouseLeave={handleMouseLeave}
-                onMouseUp={handleMouseLeave}
-                onMouseEnter={handleMouseLeave}
-              >
-                <Image
-                  src={Image1}
-                  alt="entrance"
-                  // width={1000} 
-                  // height={300} 
-                  className="object-contain"
-                  priority 
-                />
-              </div>
+              <div className="relative w-full h-[200px] md:h-[400px] lg:h-[800px]">
+                  <Image
+                    ref={frameRef}
+                    onMouseMove={handleMouseMove}
+                    onMouseLeave={handleMouseLeave}
+                    onMouseUp={handleMouseLeave}
+                    onMouseEnter={handleMouseLeave}
+                    src='https://plus.unsplash.com/premium_photo-1661814278311-d59ab0b4a676?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+                    alt="entrance.webp"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    priority
+                    className="object-contain"
+                  />
+                </div>
               </div>
             </div>
-
             {/* for the rounded corner */}
             <svg
               className="invisible absolute size-0"
@@ -109,14 +101,15 @@ const Middle = () => {
             </svg>
           </div>
         </div>
-
         <div className="-mt-80 flex w-full justify-center md:-mt-64 md:me-44 md:justify-end">
           <div className="flex h-full w-fit flex-col items-center md:items-start">
-            <p className="mt-3 max-w-sm text-center font-circular-web text-violet-50 md:text-start">
-              Where realms converge, lies Zentry and the boundless pillar.
-              Discover its secrets and shape your fate amidst infinite
-              opportunities.
+            <p className="mt-3 max-w-sm text-center font-raleway- text-violet-50 md:text-start">
+            Where journeys begin, lies the gateway to endless horizons.
+            Unveil its wonders and chart your path through boundless adventures.
             </p>
+            <button className="flex items-center gap-2 px-4 py-2 rounded-xl border border-black bg-white text-black text-sm hover:shadow-[4px_4px_0px_0px_rgba(0,0,0)] transition duration-200">
+            Contact Us <TiLocationArrow />
+          </button>
           </div>
         </div>
       </div>

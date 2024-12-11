@@ -25,34 +25,35 @@ export const PEOPLE_URL = [
 // FEATURES SECTION
 export const FEATURES = [
   {
-    title: 'Real maps can be offline',
+    title: 'Offline Maps for Remote Adventures',
     icon: '/map.svg',
     variant: 'green',
     description:
-      'We provide a solution for you to be able to use our application when climbing, yes offline maps you can use at any time there is no signal at the location',
+      'Access detailed maps even without an internet connection. Perfect for exploring remote destinations or hiking trails where signals are scarce.',
   },
   {
-    title: 'Set an adventure schedule',
+    title: 'Plan Your Dream Journey',
     icon: '/calendar.svg',
     variant: 'green',
     description:
-      "Schedule an adventure with friends. On holidays, there are many interesting offers from Hilink. That way, there's no more discussion",
+      'Easily schedule trips with friends or family. Take advantage of exclusive holiday offers and create unforgettable memories with Hilink Travel.',
   },
   {
-    title: 'Technology using augment reality',
+    title: 'Augmented Reality Travel Guides',
     icon: '/tech.svg',
     variant: 'green',
     description:
-      'Technology uses augmented reality as a guide to your hiking trail in the forest to the top of the mountain. Already supported by the latest technology without an internet connection',
+      'Enhance your adventures with augmented reality technology. Navigate forests, trails, and mountains effortlessly without requiring internet access.',
   },
   {
-    title: 'Many new locations every month',
+    title: 'Discover New Destinations Monthly',
     icon: '/location.svg',
     variant: 'orange',
     description:
-      'Lots of new locations every month, because we have a worldwide community of climbers who share their best experiences with climbing',
+      'Explore fresh travel destinations every month, curated by a global community of adventurers sharing their favorite spots and experiences.',
   },
 ];
+
 
 // FOOTER SECTION
 export const FOOTER_LINKS = [
