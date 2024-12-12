@@ -2,8 +2,6 @@ import React, { useRef, MouseEvent } from "react";
 import Image from "next/image";
 import gsap from "gsap";
 import AnimatedTitle from "./AnimatedTitle";
-import { TiLocationArrow } from "react-icons/ti";
-import WhatsAppContactButton from "./WhatsAppContactButton";
 
 const Middle: React.FC = () => {
   const frameRef = useRef<HTMLImageElement>(null);
