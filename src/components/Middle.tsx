@@ -3,6 +3,7 @@ import Image from "next/image";
 import gsap from "gsap";
 import AnimatedTitle from "./AnimatedTitle";
 import { TiLocationArrow } from "react-icons/ti";
+import WhatsAppContactButton from "./WhatsAppContactButton";
 
 const Middle: React.FC = () => {
   const frameRef = useRef<HTMLImageElement>(null);
@@ -46,7 +47,7 @@ const Middle: React.FC = () => {
     <div id="story" className="min-h-dvh w-full bg-black text-blue-50">
       <div className="flex size-full flex-col items-center py-10 pb-24">
         <p className="font-general text-sm uppercase md:text-[10px]">
-          the multiversal ip world
+          Your Journey Begins
         </p>
         <div className="relative size-full">
           <AnimatedTitle
@@ -107,9 +108,12 @@ const Middle: React.FC = () => {
             Where journeys begin, lies the gateway to endless horizons.
             Unveil its wonders and chart your path through boundless adventures.
             </p>
-            <button className="flex items-center gap-2 px-4 py-2 rounded-xl border border-black bg-white text-black text-sm hover:shadow-[4px_4px_0px_0px_rgba(0,0,0)] transition duration-200">
-            Contact Us <TiLocationArrow />
-          </button>
+            
+            <br />
+            {/* <WhatsAppContactButton
+              phoneNumber="+917364071493" 
+              message="Hello! I'd like to get in touch." 
+            /> */}
           </div>
         </div>
       </div>

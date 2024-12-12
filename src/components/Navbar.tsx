@@ -3,14 +3,14 @@
 import gsap from "gsap";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import { Link as ScrollLink } from "react-scroll";
 import Logo from '../../public/Logo.png'
-import { TiLocationArrow } from "react-icons/ti";
-// import clsx from "clsx";
+import WhatsAppContactButton from "./WhatsAppContactButton";
 
 const navItems = [
   { label: "Home", href: "home" },
   { label: "About", href: "about" },
-  { label: "Prologue", href: "prologue" },
+  { label: "Destinations", href: "cards" },
   { label: "Features", href: "features" },
 ];
 
@@ -67,20 +67,23 @@ const NavBar = () => {
               height={80}
               className="w-20"
             />
-          <button className="flex items-center gap-2 px-4 py-2 rounded-xl border border-black bg-white text-black text-sm hover:shadow-[4px_4px_0px_0px_rgba(0,0,0)] transition duration-200">
-            Contact Us <TiLocationArrow />
-          </button>
+            <WhatsAppContactButton
+              phoneNumber="+917364071493" 
+              message="Hello! I'd like to get in touch."
+            />
           </div>
           <div className="flex h-full items-center">
             <div className="hidden md:block">
               {navItems.map((item, index) => (
-               <a
-               key={index}
-               href={`#${item.href}`}
-               className="nav-hover-btn"
-             >
-               {item.label}
-             </a>
+                <ScrollLink
+                  key={index}
+                  to={item.href}
+                  smooth={true}
+                  duration={500}
+                  className="nav-hover-btn cursor-pointer"
+                >
+                  {item.label}
+                </ScrollLink>
               ))}
             </div>
           </div>
