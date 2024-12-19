@@ -63,13 +63,15 @@ const NavBar = () => {
             <Image
               src={Logo}
               alt="logo"
-              width={80}
-              height={80}
-              className="w-20"
+              width={100}
+              height={100}
+              className="w-40"
+              // style={{ width: '12rem' }}
             />
             <WhatsAppContactButton
               phoneNumber="+917364071493" 
               message="Hello! I'd like to get in touch."
+              buttonText="Contact Us"
             />
           </div>
           <div className="flex h-full items-center">
