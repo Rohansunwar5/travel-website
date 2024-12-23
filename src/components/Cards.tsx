@@ -192,17 +192,18 @@ const DummyContent2 = () => {
               <span className="font-bold text-neutral-700 dark:text-neutral-200">
               Discover Mechuka – A Hidden Gem of Arunachal Pradesh
               </span> <br />
-              Tucked away in the pristine mountains of Arunachal Pradesh, Mechuka is a serene and lesser-known destination that offers a unique blend of natural beauty, cultural heritage, and tranquility. Located at the Indo-China border in the West Siang district, Mechuka is often referred to as the "Switzerland of India" due to its mesmerizing landscapes of snow-capped peaks, lush valleys, and meandering rivers.
-              Known for its untouched beauty, Mechuka is the perfect escape for travelers looking to experience a tranquil retreat away from the hustle and bustle of city life.
+             <p>
+  Located at the Indo-China border in the West Siang district, Mechuka is often referred to as the &ldquo;Switzerland of India&rdquo; due to its mesmerizing landscapes of snow-capped peaks, lush valleys, and meandering rivers.
+</p>
 
             </p>
-            <Image
+            {/* <Image
               src="https://assets.aceternity.com/macbook.png"
               alt="Macbook mockup from Aceternity UI"
               height="500"
               width="500"
               className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
-            />
+            /> */}
           </div>
           <div
             key={"dummy-content" }
@@ -214,17 +215,17 @@ const DummyContent2 = () => {
               </span>{" "} 
               <br />1. Mesmerizing Scenic Views: Mechuka is a haven for nature lovers, offering some of the most stunning landscapes in India. With its vast green meadows, towering mountains, crystal-clear rivers, and peaceful villages, it feels like a dream come to life. The beauty of the region changes with the seasons – lush and vibrant in the summer and enveloped in a blanket of snow during winter.
               <br />2. Rich Tribal Culture: Home to the Memba tribe, Mechuka offers an authentic glimpse into the culture of the indigenous people. Their traditions, handicrafts, and way of life are deeply rooted in Tibetan Buddhism, and visitors can explore local monasteries and participate in cultural festivals. The hospitality of the locals is unmatched, and a visit to their homes provides a warm and personal experience.
-              <br /> 3. Adventure and Peaceful Retreat: Whether you're an adventure enthusiast or someone seeking peace, Mechuka has something to offer. The region is perfect for trekking, camping, fishing, and even river rafting. The unspoiled environment and peaceful surroundings also make it an ideal spot for meditation and soul-searching, offering a serene escape from the stresses of modern life.
-              <br /> 4. Indo-China Border Proximity: 
-Mechuka holds a strategic position near the Indo-China border and offers a unique chance to visit a border area. Though access is restricted to authorized visitors, the nearby Lipunla Pass gives a glimpse into India's frontier defense and its importance in the region's geopolitical landscape.
+              <br /> 3. Adventure and Peaceful Retreat: Whether you&apos;re an adventure enthusiast or someone seeking peace, Mechuka has something to offer. The region is perfect for trekking, camping, fishing, and even river rafting. The unspoiled environment and peaceful surroundings also make it an ideal spot for meditation and soul-searching, offering a serene escape from the stresses of modern life.
+              <br /> 4. Indo-China Border Proximity:
+              Mechuka holds a strategic position near the Indo-China border and offers a unique chance to visit a border area. Though access is restricted to authorized visitors, the nearby Lipunla Pass gives a glimpse into India&apos;s frontier defense and its importance in the region&apos;s geopolitical landscape.
             </p>
-            <Image
+            {/* <Image
               src="https://assets.aceternity.com/macbook.png"
               alt="Macbook mockup from Aceternity UI"
               height="500"
               width="500"
               className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
-            />
+            /> */}
           </div>
           <div
             key={"dummy-content" }
@@ -233,29 +234,29 @@ Mechuka holds a strategic position near the Indo-China border and offers a uniqu
             <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
               <span className="font-bold text-neutral-700 dark:text-neutral-200">
               Top Attractions in Mechuka
-              </span>{" "} <br />
-              1. Mechuka Valley: 
-The heart of Mechuka, the valley offers breathtaking views of the surrounding hills, rivers, and the mighty Himalayas. The valley is dotted with small villages and is perfect for trekking and exploring the natural beauty of the region.
+              </span>{" "}  
+              <br />1. Mechuka Valley: 
+              The heart of Mechuka, the valley offers breathtaking views of the surrounding hills, rivers, and the mighty Himalayas. The valley is dotted with small villages and is perfect for trekking and exploring the natural beauty of the region.
 
               <br />2. Samten Yongcha Monastery: 
-The Samten Yongcha Monastery, situated atop a hill, offers panoramic views of the entire valley. The monastery’s calm and serene environment makes it a spiritual retreat, with its Tibetan Buddhist architecture and peaceful surroundings. It's a great place for introspection and prayer.
+              The Samten Yongcha Monastery, situated atop a hill, offers panoramic views of the entire valley. The monastery&rsquo;s calm and serene environment makes it a spiritual retreat, with its Tibetan Buddhist architecture and peaceful surroundings. It&apos;s a great place for introspection and prayer.
 
               <br />3. River Siyom: 
-The Siyom River, also known as the "Mechuka River," flows through the valley, offering crystal-clear waters and opportunities for activities like fishing and boating. The river also adds a tranquil touch to the surrounding beauty of the region.
+              The Siyom River, also known as the &quot;Mechuka River,&quot; flows through the valley, offering crystal-clear waters and opportunities for activities like fishing and boating. The river also adds a tranquil touch to the surrounding beauty of the region.
 
               <br />4. Riwot Waterfall: 
-A hidden gem, the Riwot Waterfall is a peaceful and serene spot located a short distance from the town. It offers a perfect backdrop for photography, nature walks, and quiet moments of relaxation amidst the natural beauty of Mechuka.
-              <br />5. Lipunla Pass
-For those interested in history and geography, Lipunla Pass offers a rare opportunity to explore a strategic location near the Indo-China border. Though access is restricted, the region around the pass gives an insight into the strategic importance of the area.
+              A hidden gem, the Riwot Waterfall is a peaceful and serene spot located a short distance from the town. It offers a perfect backdrop for photography, nature walks, and quiet moments of relaxation amidst the natural beauty of Mechuka.
 
+              <br />5. Lipunla Pass: 
+              For those interested in history and geography, Lipunla Pass offers a rare opportunity to explore a strategic location near the Indo-China border. Though access is restricted, the region around the pass gives an insight into the strategic importance of the area.
             </p>
-            <Image
+            {/* <Image
               src="https://assets.aceternity.com/macbook.png"
               alt="Macbook mockup from Aceternity UI"
               height="500"
               width="500"
               className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
-            />
+            /> */}
           </div>
           <div
             key={"dummy-content" }
@@ -398,28 +399,26 @@ For adventure enthusiasts, Mago and Thingbu offer incredible trekking opportunit
             <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
               <span className="font-bold text-neutral-700 dark:text-neutral-200">
               Top Attractions Near Mago and Thingbu
-              </span>{" "} <br />
+              </span>{" "}  <br />
               1. The Surrounding Himalayas: 
-The towering peaks of the Eastern Himalayas serve as a stunning backdrop for Mago and Thingbu. The mountains provide excellent trekking and exploration opportunities, and their beauty makes the region a must-visit for those interested in nature and adventure.
+              The towering peaks of the Eastern Himalayas serve as a stunning backdrop for Mago and Thingbu. The mountains provide excellent trekking and exploration opportunities, and their beauty makes the region a must-visit for those interested in nature and adventure.
 
-
-              <br /> 2. Mago Monastery: 
-One of the cultural highlights of the region is the Mago Monastery, a beautiful Buddhist monastery that offers insight into the spiritual practices of the Monpa tribe. The monastery is perched on a hilltop, providing breathtaking views of the surrounding landscape. It’s a peaceful spot for reflection and learning about the region's Buddhist traditions.
-
+              <br />2. Mago Monastery: 
+              One of the cultural highlights of the region is the Mago Monastery, a beautiful Buddhist monastery that offers insight into the spiritual practices of the Monpa tribe. The monastery is perched on a hilltop, providing breathtaking views of the surrounding landscape. It&rsquo;s a peaceful spot for reflection and learning about the region&apos;s Buddhist traditions.
 
               <br />3. Hot Springs in Thingbu: 
-Thingbu is known for its natural hot springs, which are believed to have medicinal properties. Visitors can relax in these hot springs, surrounded by nature, and enjoy a rejuvenating experience. The warm waters of the springs are a unique natural feature of the region and offer a tranquil retreat.
+              Thingbu is known for its natural hot springs, which are believed to have medicinal properties. Visitors can relax in these hot springs, surrounded by nature, and enjoy a rejuvenating experience. The warm waters of the springs are a unique natural feature of the region and offer a tranquil retreat.
 
               <br />4. Trek to the Indo-China Border: 
-Mago and Thingbu's proximity to the Indo-China border makes it an interesting area for those interested in exploring the strategic significance of the region. While access is restricted, the surrounding mountains and passes provide breathtaking views of the border and a sense of adventure.
+              Mago and Thingbu&apos;s proximity to the Indo-China border makes it an interesting area for those interested in exploring the strategic significance of the region. While access is restricted, the surrounding mountains and passes provide breathtaking views of the border and a sense of adventure.
             </p>
-            <Image
+            {/* <Image
               src="https://assets.aceternity.com/macbook.png"
               alt="Macbook mockup from Aceternity UI"
               height="500"
               width="500"
               className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
-            />
+            /> */}
           </div>
           <div
             key={"dummy-content" }
