@@ -268,13 +268,13 @@ const DummyContent2 = () => {
               </span>{" "} <br />
               The best time to visit Mechuka is from March to October, when the weather is pleasant and the region is accessible for sightseeing and outdoor activities. For those interested in witnessing snowfall and experiencing winter, the months of November to February bring snow to the area, making it a winter wonderland, though some roads may be challenging during this season.
             </p>
-            <Image
+            {/* <Image
               src="https://assets.aceternity.com/macbook.png"
               alt="Macbook mockup from Aceternity UI"
               height="500"
               width="500"
               className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
-            />
+            /> */}
           </div>
           <div
             key={"dummy-content" }
@@ -289,13 +289,13 @@ const DummyContent2 = () => {
               <br />By Road: Mechuka is well-connected by road to various parts of Arunachal Pradesh and Assam. The journey to Mechuka itself is an adventure, with winding roads offering breathtaking views of the hills, rivers, and valleys.
 
             </p>
-            <Image
+            {/* <Image
               src="https://assets.aceternity.com/macbook.png"
               alt="Macbook mockup from Aceternity UI"
               height="500"
               width="500"
               className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
-            />
+            /> */}
           </div>
           <div
             key={"dummy-content" }
@@ -307,13 +307,13 @@ const DummyContent2 = () => {
               </span>{" "} <br />
               Though a relatively remote destination, Mechuka offers a range of accommodations to suit different preferences. From basic guesthouses to charming homestays, visitors can enjoy warm local hospitality. For a more comfortable stay, there are a few hotels and resorts offering modern amenities while still maintaining the traditional charm of the region.
             </p>
-            <Image
+            {/* <Image
               src="https://assets.aceternity.com/macbook.png"
               alt="Macbook mockup from Aceternity UI"
               height="500"
               width="500"
               className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
-            />
+            /> */}
           </div>
           <div
             key={"dummy-content" }
@@ -328,13 +328,13 @@ const DummyContent2 = () => {
 
 
             </p>
-            <Image
+            {/* <Image
               src="https://assets.aceternity.com/macbook.png"
               alt="Macbook mockup from Aceternity UI"
               height="500"
               width="500"
               className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
-            />
+            /> */}
           </div>
           <ActionButton/>
 
@@ -355,13 +355,13 @@ const DummyContent3 = () => {
               Nestled in the tranquil beauty of Arunachal Pradesh, Mago and Thingbu are two small, picturesque villages that offer an off-the-beaten-path experience for those seeking an escape into nature. Located in the West Kameng district, these villages lie near the Indo-China border and are known for their pristine landscapes, vibrant culture, and serene atmosphere. Ideal for nature lovers, trekkers, and those seeking to experience the rural charm of Northeast India, Mago and Thingbu promise an unforgettable journey.
 
             </p>
-            <Image
+            {/* <Image
               src="https://assets.aceternity.com/macbook.png"
               alt="Macbook mockup from Aceternity UI"
               height="500"
               width="500"
               className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
-            />
+            /> */}
           </div>
           <div
             key={"dummy-content" }
@@ -384,13 +384,13 @@ Mago and Thingbu are home to the indigenous people of the area, mainly from the 
 For adventure enthusiasts, Mago and Thingbu offer incredible trekking opportunities. The journey to these villages itself is an adventure, with scenic treks through dense forests, along rivers, and across mountain passes. The surrounding mountains and valleys offer several trails for both beginners and seasoned trekkers.
 
             </p>
-            <Image
+            {/* <Image
               src="https://assets.aceternity.com/macbook.png"
               alt="Macbook mockup from Aceternity UI"
               height="500"
               width="500"
               className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
-            />
+            /> */}
           </div>
           <div
             key={"dummy-content" }
@@ -430,13 +430,13 @@ For adventure enthusiasts, Mago and Thingbu offer incredible trekking opportunit
               </span>{" "} <br />
               The best time to visit Mago and Thingbu is from March to October, when the weather is relatively warm, and the region is accessible for trekking and exploration. Winters (November to February) bring snow and make the region look magical, though temperatures can drop significantly, and the area may be more challenging to access due to snow.
               </p>
-            <Image
+            {/* <Image
               src="https://assets.aceternity.com/macbook.png"
               alt="Macbook mockup from Aceternity UI"
               height="500"
               width="500"
               className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
-            />
+            /> */}
           </div>
           <div
             key={"dummy-content" }
@@ -451,13 +451,13 @@ For adventure enthusiasts, Mago and Thingbu offer incredible trekking opportunit
               <br />By Road: Mago and Thingbu are accessible by road, with the nearest town being Bomdila. The journey to these villages takes visitors through scenic mountain roads, offering picturesque views of the landscape along the way.
 
             </p>
-            <Image
+            {/* <Image
               src="https://assets.aceternity.com/macbook.png"
               alt="Macbook mockup from Aceternity UI"
               height="500"
               width="500"
               className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
-            />
+            /> */}
           </div>
           <div
             key={"dummy-content" }
@@ -469,13 +469,13 @@ For adventure enthusiasts, Mago and Thingbu offer incredible trekking opportunit
               </span>{" "} <br />
               Accommodation in Mago and Thingbu is limited, with options mostly available in the form of basic guesthouses, homestays, and campsites. Staying with the local people provides an opportunity to experience their warm hospitality and traditional lifestyle. For more comfortable accommodations, you can stay in Bomdila, the nearest town, and plan a day trip to explore the villages.
             </p>
-            <Image
+            {/* <Image
               src="https://assets.aceternity.com/macbook.png"
               alt="Macbook mockup from Aceternity UI"
               height="500"
               width="500"
               className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
-            />
+            /> */}
           </div>
           <div
             key={"dummy-content" }
@@ -487,13 +487,13 @@ For adventure enthusiasts, Mago and Thingbu offer incredible trekking opportunit
               </span>{" "} <br />
               Mago and Thingbu offer an authentic, off-the-beaten-path experience that combines natural beauty, adventure, and culture. Whether you are a nature enthusiast, a photographer, a trekker, or someone seeking peace away from the crowded tourist spots, these villages provide the perfect escape into the heart of Arunachal Pradesh.
             </p>
-            <Image
+            {/* <Image
               src="https://assets.aceternity.com/macbook.png"
               alt="Macbook mockup from Aceternity UI"
               height="500"
               width="500"
               className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
-            />
+            /> */}
           </div>
           <ActionButton/>
 
