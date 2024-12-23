@@ -72,19 +72,19 @@ export function ActionButton() {
               <div className="flex  items-center justify-center">
                 <PlaneIcon className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
                 <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-                  5 connecting flights
+                  connecting flights
                 </span>
               </div>
               <div className="flex items-center justify-center">
                 <ElevatorIcon className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
                 <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-                  12 hotels
+                  hotels
                 </span>
               </div>
               <div className="flex items-center justify-center">
                 <VacationIcon className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
                 <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-                  69 visiting spots
+                  visiting spots
                 </span>
               </div>
               <div className="flex  items-center justify-center">
@@ -99,12 +99,12 @@ export function ActionButton() {
                   Open Mic
                 </span>
               </div>
-              <div className="flex items-center justify-center">
+              {/* <div className="flex items-center justify-center">
                 <ParachuteIcon className="mr-1 text-neutral-700 dark:text-neutral-300 h-4 w-4" />
                 <span className="text-neutral-700 dark:text-neutral-300 text-sm">
                   Paragliding
                 </span>
-              </div>
+              </div> */}
             </div>
           </ModalContent>
           <ModalFooter className="gap-4">
