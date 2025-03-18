@@ -55,7 +55,7 @@ const Hero = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 1, ease: 'easeInOut', delay: 1.2 }}
             >
-              Nestled in the Eastern Himalayas, Arunachal Pradesh is India's hidden gem of pristine landscapes, diverse cultures, and breathtaking adventures. Our expert local guides and customized itineraries ensure your journey through this magical frontier state becomes more than just a trip—it transforms into cherished memories that last a lifetime.
+              Nestled in the Eastern Himalayas, Arunachal Pradesh is India&apos;s hidden gem of pristine landscapes, diverse cultures, and breathtaking adventures. Our expert local guides and customized itineraries ensure your journey through this magical frontier state becomes more than just a trip—it transforms into cherished memories that last a lifetime.
             </motion.p>
           </motion.div>
         </motion.div>
