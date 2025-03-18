@@ -10,7 +10,6 @@ import Middle from "@/components/Middle";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import { Testimonials } from "@/components/Testimonials";
-import ItinerarBoxes from "@/components/ItenaryBox1";
 import ItenaryBox1 from "@/components/ItenaryBox1";
 import ItenaryBox2 from "@/components/ItenaryBox2";
 import ItenaryBox3 from "@/components/ItenaryBox3";

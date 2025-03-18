@@ -10,7 +10,6 @@ import { TiLocationArrow } from 'react-icons/ti';
  * @param {string} [props.className=''] - Additional CSS classes
  */
 const WhatsAppContactButton = ({ 
-  phoneNumber, 
   message = '', 
   buttonText = 'Contact Us', 
   className = '' 

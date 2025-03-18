@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Map, Compass, Plane, Palmtree, Car, PlaneTakeoff , TicketCheck, CircleX, Telescope, Backpack   } from "lucide-react"
+import { Map, Compass, Plane, Palmtree, Car, TicketCheck, CircleX, Telescope } from "lucide-react"
 import { GlowingEffect } from "@/components/ui/glowing-effect"
 import { ActionBox } from "@/components/ActionBox"
 import type React from "react"
