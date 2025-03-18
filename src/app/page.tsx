@@ -10,6 +10,10 @@ import Middle from "@/components/Middle";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import { Testimonials } from "@/components/Testimonials";
+import ItinerarBoxes from "@/components/ItenaryBox1";
+import ItenaryBox1 from "@/components/ItenaryBox1";
+import ItenaryBox2 from "@/components/ItenaryBox2";
+import ItenaryBox3 from "@/components/ItenaryBox3";
 
 
 
@@ -28,6 +32,15 @@ export default function Home() {
       </section>
       <section id="cards">
         <Cards />
+      </section>
+      <section id="itinerary">
+        <ItenaryBox1 />
+      </section>
+      <section id="itenaries">
+        <ItenaryBox2 />
+      </section>
+      <section id="itenaries">
+        <ItenaryBox3 />
       </section>
       <section id="about">
         <About />

@@ -3,7 +3,7 @@ import React from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 
 const socialLinks = [
-  { name: 'Instagram', href: 'https://instagram.com' },
+  { name: 'Instagram', href: 'https://www.instagram.com/nomads_lane_2024?igsh=Z2VoNzZoZjg2eWR3' },
   { name: 'Facebook', href: 'https://facebook.com' },
   { name: 'Twitter', href: 'https://vimeo.com' },
 ];

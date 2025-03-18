@@ -10,36 +10,33 @@ import AnimatedTitle from "../AnimatedTitle";
 export function About() {
   const features = [
     {
-      title: "Lorem Ipsum1",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      title: "Adventure Awaits!",
+      description: "Discover breathtaking landscapes and thrilling experiences.",
       skeleton: <SkeletonOne />,
       className:
         "col-span-1 font-raleway lg:col-span-4 border-b lg:border-r border-black",
     },
     {
-      title: "Lorem Ipsum2",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      title: "Unforgettable Moments",
+      description: "Create lasting memories surrounded by nature’s beauty.",
       skeleton: <SkeletonTwo />,
       className: "border-b col-span-1 lg:col-span-2 border-black",
     },
     {
-      title: "Lorem Ipsum3",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      title: "The Heart of Arunachal",
+      description: "Immerse yourself in the vibrant culture and traditions.",
       skeleton: <SkeletonThree />,
       className:
-        "col-span-1 lg:col-span-3 lg:border-r   border-black",
+        "col-span-1 lg:col-span-3 lg:border-r border-black",
     },
     {
-      title: "Lorem Ipusm4",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      title: "A Journey Like No Other",
+      description: "Explore, experience, and embrace the magic of Arunachal.",
       skeleton: <SkeletonFour />,
-      className: "col-span-1 lg:col-span-3 border-b lg:border-none  border-black",
+      className: "col-span-1 lg:col-span-3 border-b lg:border-none border-black",
     },
   ];
+  
   return (
     <div className="relative z-20 py-10 lg:py-40 max-w-7xl mx-auto">
       <div className="px-8">
@@ -52,9 +49,9 @@ export function About() {
           containerClass="mt-5 !text-black text-center"
         />
 
-        <p className="text-sm lg:text-base font-raleway max-w-2xl  my-4 mx-auto text-[#E8BCB9] text-center font-normal dark:text-neutral-300">
+        {/* <p className="text-sm lg:text-base font-raleway max-w-2xl  my-4 mx-auto text-[#E8BCB9] text-center font-normal dark:text-neutral-300">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit
-        </p>
+        </p> */}
       </div>
 
       <div className="relative ">
@@ -157,9 +154,9 @@ export const SkeletonThree = () => {
 
 export const SkeletonTwo = () => {
   const images = [
-    "https://images.unsplash.com/photo-1517322048670-4fba75cbbb62?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1573790387438-4da905039392?q=80&w=3425&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1555400038-63f5ba517a47?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://plus.unsplash.com/premium_photo-1697729690458-2d64ca777c04?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1626761627604-f27d98885f4b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1628070018796-a9f4e2dd482a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "https://images.unsplash.com/photo-1554931670-4ebfabf6e7a9?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "https://images.unsplash.com/photo-1546484475-7f7bd55792da?q=80&w=2581&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   ];

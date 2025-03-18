@@ -25,32 +25,32 @@ export const PEOPLE_URL = [
 // FEATURES SECTION
 export const FEATURES = [
   {
-    title: 'Offline Maps for Remote Adventures',
+    title: 'Seamless Travel Experience',
     icon: '/map.svg',
     variant: 'green',
     description:
-      'Access detailed maps even without an internet connection. Perfect for exploring remote destinations or hiking trails where signals are scarce.',
+      'Enjoy hassle-free journeys with carefully planned itineraries, comfortable accommodations, and well-maintained transport.',
   },
   {
-    title: 'Plan Your Dream Journey',
+    title: 'Expert-Guided Tours',
     icon: '/calendar.svg',
     variant: 'green',
     description:
-      'Easily schedule trips with friends or family. Take advantage of exclusive holiday offers and create unforgettable memories with Hilink Travel.',
+      'Our local guides provide insightful knowledge about historical sites, cultural heritage, and hidden gems of Northeast India.',
   },
   {
-    title: 'Augmented Reality Travel Guides',
+    title: 'Adventure & Nature Activities',
     icon: '/tech.svg',
     variant: 'green',
     description:
-      'Enhance your adventures with augmented reality technology. Navigate forests, trails, and mountains effortlessly without requiring internet access.',
+      'Indulge in thrilling activities like river rafting, trekking, and birdwatching amidst breathtaking landscapes.',
   },
   {
-    title: 'Discover New Destinations Monthly',
+    title: 'Scenic Road Trips',
     icon: '/location.svg',
     variant: 'orange',
     description:
-      'Explore fresh travel destinations every month, curated by a global community of adventurers sharing their favorite spots and experiences.',
+      'Experience mesmerizing road journeys through mountain passes, lush valleys, and serene riversides.',
   },
 ];
 

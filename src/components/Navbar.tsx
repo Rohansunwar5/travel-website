@@ -12,6 +12,7 @@ const navItems = [
   { label: "About", href: "about" },
   { label: "Destinations", href: "cards" },
   { label: "Features", href: "features" },
+  { label: "itinerary", href: "itinerary" },
 ];
 
 const NavBar = () => {

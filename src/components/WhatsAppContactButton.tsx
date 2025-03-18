@@ -20,7 +20,7 @@ const WhatsAppContactButton = ({
     const encodedMessage = encodeURIComponent(message);
     
     // Construct WhatsApp web URL
-    const whatsappUrl = `https://wa.me/${phoneNumber}${message ? `?text=${encodedMessage}` : ''}`;
+    const whatsappUrl = `https://wa.me/${+917085327519}${message ? `?text=${encodedMessage}` : ''}`;
     
     // Open WhatsApp in a new tab/window
     window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
