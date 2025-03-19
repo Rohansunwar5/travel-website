@@ -103,7 +103,7 @@ export default function ItenaryBox2() {
           Packages we offer
         </p> */}
         <AnimatedTitle
-        title="Dirange, <b>T</b>awang  <br /> and <b>S</b>hangti"
+        title="Dirang, <b>T</b>awang  <br /> and <b>S</b>angti"
         containerClass="mt-5 !text-black text-center"
       />
           {/* <p className="max-w-3xl mx-auto text-lg" style={{ color: "#E8BCB9" }}>
